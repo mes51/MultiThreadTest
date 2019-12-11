@@ -1,0 +1,11 @@
+version = "1.0.0"
+archivesBaseName = "MultiThreadTest"
+
+tasks.withType(Jar) {
+    compileJava.options.encoding = 'UTF-8'
+}
+
+sourceSets.main {
+    java.srcDirs project.projectDir.name
+    resources.srcDirs project.projectDir.name
+}
